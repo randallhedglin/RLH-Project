@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project title="API Documentation" version="2.9.1">
+  <partials/>
+  <file path="LinkCard.php" generated-path="LinkCard.html" hash="a5c0d2945e0582c816ad7bc1e919cf64" package="RLHProject">
+    <docblock line="0">
+      <description>This is the short file description.</description>
+      <long-description>This is the long file description.</long-description>
+      <tag name="author" line="0" description="Randall Hedglin" link="mailto:randallhedglin@yahoo.com"/>
+      <tag name="copyright" line="0" description="Copyright 2021 Randall Hedglin"/>
+      <tag name="license" line="0" description="https://example.com" link="https://example.com"/>
+      <tag name="package" line="0" description="RLHProject"/>
+      <tag name="version" line="0" description="1.0.0 Original release."/>
+      <tag name="filesource" line="0" description=""/>
+      <tag name="todo" line="0" description="Create the LinkStack and LinkContainer classes."/>
+    </docblock>
+    <class final="false" abstract="false" namespace="RLHProject" line="30" package="RLHProject">
+      <extends/>
+      <name>LinkCard</name>
+      <full_name>\RLHProject\LinkCard</full_name>
+      <docblock line="30">
+        <description>Container class for displaying Link Cards.</description>
+        <long-description>This class creates and displays links as Link Cards using the desired
+styles and settings as provided.</long-description>
+        <tag name="since" line="30" description="1.0.0"/>
+        <tag name="package" line="30" description="RLHProject"/>
+      </docblock>
+      <property static="false" visibility="private" namespace="RLHProject" line="33" package="RLHProject">
+        <name>$m_display_text</name>
+        <full_name>\RLHProject\LinkCard::$m_display_text</full_name>
+        <default>''</default>
+        <docblock line="33">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="33" description="&lt;p&gt;Text to be displayed on the Link Card.&lt;/p&gt;" type="string" variable="$m_display_text">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <property static="false" visibility="private" namespace="RLHProject" line="36" package="RLHProject">
+        <name>$m_url</name>
+        <full_name>\RLHProject\LinkCard::$m_url</full_name>
+        <default>''</default>
+        <docblock line="36">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="36" description="&lt;p&gt;URL associated with the Link Card.&lt;/p&gt;" type="string" variable="$url">
+            <type>string</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="RLHProject" line="54" package="RLHProject">
+        <name>__construct</name>
+        <full_name>\RLHProject\LinkCard::__construct()</full_name>
+        <docblock line="54">
+          <description>LinkCard class constructor.</description>
+          <long-description>Creates a new Link Card object with the specified display text and
+URL.</long-description>
+          <tag name="param" line="54" description="&lt;p&gt;Text to be displayed on the Link Card.&lt;/p&gt;" type="string" variable="$display_text">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="54" description="&lt;p&gt;URL associated with the Link Card.&lt;/p&gt;" type="string" variable="$url">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="54" description="" type="void">
+            <type>void</type>
+          </tag>
+          <tag name="throws" line="54" description="If either object passed is not a valid non-zero-&#10;length string, an Exception will be thrown." type="\Exception">
+            <type>\Exception</type>
+          </tag>
+          <tag name="since" line="54" description="1.0.0"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$display_text</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$url</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="RLHProject" line="75" package="RLHProject">
+        <name>set_display_text</name>
+        <full_name>\RLHProject\LinkCard::set_display_text()</full_name>
+        <docblock line="75">
+          <description>Set the display text.</description>
+          <long-description>Specify the text to be displayed on the Link Card.</long-description>
+          <tag name="param" line="75" description="&lt;p&gt;Text to be displayed on the Link Card.&lt;/p&gt;" type="string" variable="$display_text">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="75" description="" type="void">
+            <type>void</type>
+          </tag>
+          <tag name="throws" line="75" description="If the object passed is not a valid non-zero-&#10;length string, an Exception will be thrown." type="\Exception">
+            <type>\Exception</type>
+          </tag>
+          <tag name="since" line="75" description="1.0.0"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$display_text</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="RLHProject" line="98" package="RLHProject">
+        <name>set_url</name>
+        <full_name>\RLHProject\LinkCard::set_url()</full_name>
+        <docblock line="98">
+          <description>Set the link URL.</description>
+          <long-description>Specify the URL to be associated with the LinkCard.</long-description>
+          <tag name="param" line="98" description="&lt;p&gt;URL to be associated with the LinkCard.&lt;/p&gt;" type="string" variable="$url">
+            <type>string</type>
+          </tag>
+          <tag name="return" line="98" description="" type="void">
+            <type>void</type>
+          </tag>
+          <tag name="throws" line="98" description="If the object passed is not a valid non-zero-&#10;length string, an Exception will be thrown." type="\Exception">
+            <type>\Exception</type>
+          </tag>
+          <tag name="since" line="98" description="1.0.0"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$url</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="RLHProject" line="116" package="RLHProject">
+        <name>get_display_text</name>
+        <full_name>\RLHProject\LinkCard::get_display_text()</full_name>
+        <docblock line="116">
+          <description>Get the display text.</description>
+          <long-description>Retrieve the display text associated with this LinkCard object.</long-description>
+          <tag name="return" line="116" description="The display text associated with this object." type="string">
+            <type>string</type>
+          </tag>
+          <tag name="since" line="116" description="1.0.0"/>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="RLHProject" line="132" package="RLHProject">
+        <name>get_display_text_for_comparison</name>
+        <full_name>\RLHProject\LinkCard::get_display_text_for_comparison()</full_name>
+        <docblock line="132">
+          <description>Get the display text, converted for comparison purposes.</description>
+          <long-description>Retrieve the display text associated with this LinkCard object,
+converted for comparison purposes.</long-description>
+          <tag name="return" line="132" description="The display text associated with this object, with&#10;all non-aplha-numeric characters stripped and converted to&#10;lowercase." type="string">
+            <type>string</type>
+          </tag>
+          <tag name="since" line="132" description="1.0.0"/>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="RLHProject" line="145" package="RLHProject">
+        <name>get_url</name>
+        <full_name>\RLHProject\LinkCard::get_url()</full_name>
+        <docblock line="145">
+          <description>Get the URL.</description>
+          <long-description>Retrieve the URL associated with this LinkCard object.</long-description>
+          <tag name="return" line="145" description="The URL associated with this object." type="string">
+            <type>string</type>
+          </tag>
+          <tag name="since" line="145" description="1.0.0"/>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="RLHProject" line="160" package="RLHProject">
+        <name>get_url_for_comparison</name>
+        <full_name>\RLHProject\LinkCard::get_url_for_comparison()</full_name>
+        <docblock line="160">
+          <description>Get the URL text, converted for comparison purposes.</description>
+          <long-description>Retrieve the URL associated with this LinkCard object,
+converted for comparison purposes.</long-description>
+          <tag name="return" line="160" description="The URL associated with this object, with all non-&#10;aplha-numeric characters stripped and converted to lowercase." type="string">
+            <type>string</type>
+          </tag>
+          <tag name="since" line="160" description="1.0.0"/>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="RLHProject" line="173" package="RLHProject">
+        <name>output</name>
+        <full_name>\RLHProject\LinkCard::output()</full_name>
+        <docblock line="173">
+          <description>Output the link.</description>
+          <long-description>Render the HTML code to display this Link Card object.</long-description>
+          <tag name="return" line="173" description="" type="void">
+            <type>void</type>
+          </tag>
+          <tag name="since" line="173" description="1.0.0"/>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="RLHProject" line="190" package="RLHProject">
+        <name>ascending_sort_by_display_text</name>
+        <full_name>\RLHProject\LinkCard::ascending_sort_by_display_text()</full_name>
+        <docblock line="190">
+          <description>Callback for ascending sort by display text.</description>
+          <long-description>Pass this function as the callback for usort() when you wish to sort
+Link Cards in ascending order based on their display text values.</long-description>
+          <tag name="param" line="190" description="&lt;p&gt;First value for sort comparison.&lt;/p&gt;" type="" variable="$a"/>
+          <tag name="param" line="190" description="&lt;p&gt;Second value for sort comparison.&lt;/p&gt;" type="" variable="$b"/>
+          <tag name="return" line="190" description="-1 if $a &lt; $b, 0 if $a == $b, 1 if $a &gt; $b." type="integer">
+            <type>integer</type>
+          </tag>
+          <tag name="since" line="190" description="1.0.0"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$a</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$b</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="RLHProject" line="207" package="RLHProject">
+        <name>ascending_sort_by_url</name>
+        <full_name>\RLHProject\LinkCard::ascending_sort_by_url()</full_name>
+        <docblock line="207">
+          <description>Callback for ascending sort by URL.</description>
+          <long-description>Pass this function as the callback for usort() when you wish to sort
+Link Cards in ascending order based on their URL values.</long-description>
+          <tag name="param" line="207" description="&lt;p&gt;First value for sort comparison.&lt;/p&gt;" type="" variable="$a"/>
+          <tag name="param" line="207" description="&lt;p&gt;Second value for sort comparison.&lt;/p&gt;" type="" variable="$b"/>
+          <tag name="return" line="207" description="-1 if $a &lt; $b, 0 if $a == $b, 1 if $a &gt; $b." type="integer">
+            <type>integer</type>
+          </tag>
+          <tag name="since" line="207" description="1.0.0"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$a</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$b</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="RLHProject" line="224" package="RLHProject">
+        <name>descending_sort_by_display_text</name>
+        <full_name>\RLHProject\LinkCard::descending_sort_by_display_text()</full_name>
+        <docblock line="224">
+          <description>Callback for descending sort by display text.</description>
+          <long-description>Pass this function as the callback for usort() when you wish to sort
+Link Cards in descending order based on their display text values.</long-description>
+          <tag name="param" line="224" description="&lt;p&gt;First value for sort comparison.&lt;/p&gt;" type="" variable="$a"/>
+          <tag name="param" line="224" description="&lt;p&gt;Second value for sort comparison.&lt;/p&gt;" type="" variable="$b"/>
+          <tag name="return" line="224" description="-1 if $a &gt; $b, 0 if $a == $b, 1 if $a &lt; $b." type="integer">
+            <type>integer</type>
+          </tag>
+          <tag name="since" line="224" description="1.0.0"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$a</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$b</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="true" visibility="public" namespace="RLHProject" line="241" package="RLHProject">
+        <name>descending_sort_by_url</name>
+        <full_name>\RLHProject\LinkCard::descending_sort_by_url()</full_name>
+        <docblock line="241">
+          <description>Callback for descending sort by URL.</description>
+          <long-description>Pass this function as the callback for usort() when you wish to sort
+Link Cards in descending order based on their URL values.</long-description>
+          <tag name="param" line="241" description="&lt;p&gt;First value for sort comparison.&lt;/p&gt;" type="" variable="$a"/>
+          <tag name="param" line="241" description="&lt;p&gt;Second value for sort comparison.&lt;/p&gt;" type="" variable="$b"/>
+          <tag name="return" line="241" description="-1 if $a &gt; $b, 0 if $a == $b, 1 if $a &lt; $b." type="integer">
+            <type>integer</type>
+          </tag>
+          <tag name="since" line="241" description="1.0.0"/>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$a</name>
+          <default></default>
+          <type/>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$b</name>
+          <default></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+  </file>
+  <file path="LinkStack.php" generated-path="LinkStack.html" hash="d41d8cd98f00b204e9800998ecf8427e" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+    </parse_markers>
+  </file>
+  <file path="LinkContainer.php" generated-path="LinkContainer.html" hash="d41d8cd98f00b204e9800998ecf8427e" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+    </parse_markers>
+  </file>
+  <package name="Default" full_name="Default"/>
+  <package name="RLHProject" full_name="RLHProject"/>
+  <package name="global" full_name="global"/>
+  <namespace name="RLHProject" full_name="RLHProject"/>
+  <deprecated count="0"/>
+</project>
