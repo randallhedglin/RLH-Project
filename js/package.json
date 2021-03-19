@@ -1,4 +1,20 @@
 {
     "name" : "RLHProject",
-    "version" : "1.0.0"
+    "version" : "1.0.0",
+    "description" : "A project by RLH.",
+    "homepage" : "https://example.com",
+    "bugs" : {
+        "url" : "https://example.com",
+        "email": "randallhedglin@yahoo.com"
+    },
+    "license" : "private",
+    "author" : {
+        "name" : "Randall Hedglin",
+        "email" : "randallhedglin@yahoo.com",
+        "url" : "https://example.com"
+    },
+    "repository" : {
+        "type" : "git",
+        "url" : "https://example.com"
+    }
 }

@@ -5,11 +5,10 @@
  * This is the long file description.
  * 
  * @author    Randall Hedglin <randallhedglin@yahoo.com>
- * @copyright Copyright 2021 Randall Hedglin
- * @license   https://example.com
+ * @copyright Copyright (c) 2021 Randall Hedglin
+ * @license   Private
  * @package   RLHProject
  * @version   1.0.0 Original release.
- * @filesource
  * 
  * @todo Create the LinkStack and LinkContainer classes.
  */
@@ -180,8 +179,8 @@ if (!class_exists('LinkCard')) {
          * Pass this function as the callback for usort() when you wish to sort
          * Link Cards in ascending order based on their display text values.
          * 
-         * @param $a First value for sort comparison.
-         * @param $b Second value for sort comparison.
+         * @param string $a First value for sort comparison.
+         * @param string $b Second value for sort comparison.
          * 
          * @return int -1 if $a < $b, 0 if $a == $b, 1 if $a > $b.
          * 
@@ -197,8 +196,8 @@ if (!class_exists('LinkCard')) {
          * Pass this function as the callback for usort() when you wish to sort
          * Link Cards in ascending order based on their URL values.
          * 
-         * @param $a First value for sort comparison.
-         * @param $b Second value for sort comparison.
+         * @param string $a First value for sort comparison.
+         * @param string $b Second value for sort comparison.
          * 
          * @return int -1 if $a < $b, 0 if $a == $b, 1 if $a > $b.
          * 
@@ -214,8 +213,8 @@ if (!class_exists('LinkCard')) {
          * Pass this function as the callback for usort() when you wish to sort
          * Link Cards in descending order based on their display text values.
          * 
-         * @param $a First value for sort comparison.
-         * @param $b Second value for sort comparison.
+         * @param string $a First value for sort comparison.
+         * @param string $b Second value for sort comparison.
          * 
          * @return int -1 if $a > $b, 0 if $a == $b, 1 if $a < $b.
          * 
@@ -231,8 +230,8 @@ if (!class_exists('LinkCard')) {
          * Pass this function as the callback for usort() when you wish to sort
          * Link Cards in descending order based on their URL values.
          * 
-         * @param $a First value for sort comparison.
-         * @param $b Second value for sort comparison.
+         * @param string $a First value for sort comparison.
+         * @param string $b Second value for sort comparison.
          * 
          * @return int -1 if $a > $b, 0 if $a == $b, 1 if $a < $b.
          * 
