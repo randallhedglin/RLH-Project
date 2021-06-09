@@ -5,16 +5,14 @@
  * @copyright Copyright (c) 2021 Randall Hedglin
  * @license   Private
  * @version   1.0.0
- * 
- * @todo All caught up!
  */
 
 /** @namespace website */
 /** @namespace website.imt */
-if (typeof(website) == 'undefined') website = { imt: {} };
+if (typeof(website) === 'undefined') website = { imt: {} };
 
 /** @const {number} website.imt.PI The value of pi. */
-website.imt.PI = 3.14;
+website.imt.PI = 3.14159;
 
 /**
  * Another test function.
@@ -84,7 +82,7 @@ website.imt.Calculator = class {
      * 
      * @since 1.0.0
      */
-     get num1() { return this._num1; }
+     get num1()      { return this._num1; }
      set num1(value) { this._num1 = value; }
  
      /**
@@ -94,7 +92,7 @@ website.imt.Calculator = class {
       * 
       * @since 1.0.0
       */
-     get num2() { return this._num2; }
+     get num2()      { return this._num2; }
      set num2(value) { this._num2 = value; }
  
      /** 

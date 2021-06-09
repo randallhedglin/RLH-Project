@@ -1,7 +1,8 @@
-call vendor\bin\phpdoc -d class -t phpdoc --template old-ocean
-::call vendor\bin\phpdoc -d class -t phpdoc --template zend
+rd /q /s phpdoc
+php phpdoc.phar -d class -t phpdoc --visibility public,protected,private --sourcecode --parseprivate
+rd /q /s output
 pause
 
-call jsdoc js -d jsdoc -p -t templates/docdash
-::call jsdoc js -d jsdoc -p
+rd /q /s jsdoc
+call jsdoc js -d jsdoc -p -t templates/docdash -a all
 pause

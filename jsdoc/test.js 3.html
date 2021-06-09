@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>test.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="website.imt.Calculator.html">Calculator</a><ul class='methods'><li data-type='method'><a href="website.imt.Calculator.html#.version">version</a></li><li data-type='method'><a href="website.imt.Calculator.html#add">add</a></li><li data-type='method'><a href="website.imt.Calculator.html#divide">divide</a></li><li data-type='method'><a href="website.imt.Calculator.html#multiply">multiply</a></li><li data-type='method'><a href="website.imt.Calculator.html#subtract">subtract</a></li></ul></li></ul><h3>Namespaces</h3><ul><li><a href="website.html">website</a></li><li><a href="website.imt.html">imt</a><ul class='methods'><li data-type='method'><a href="website.imt.html#.negate">negate</a></li><li data-type='method'><a href="website.imt.html#.unnegate">unnegate</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">test.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * This is a test file.
+ * 
+ * @author    Randall Hedglin &lt;randallhedglin@yahoo.com>
+ * @copyright Copyright (c) 2021 Randall Hedglin
+ * @license   Private
+ * @version   1.0.0
+ */
+
+/** @namespace website */
+/** @namespace website.imt */
+if (typeof(website) === 'undefined') website = { imt: {} };
+
+/** @const {number} website.imt.PI The value of pi. */
+website.imt.PI = 3.14159;
+
+/**
+ * Another test function.
+ * 
+ * This is another test function (long description).
+ * 
+ * @param {int} input An input value.
+ * 
+ * @returns {int} The input value but negativer.
+ * 
+ * @since 1.0.0
+ */
+website.imt.unnegate = function(input) {
+    
+    // can you see me?
+    return -(-input);
+};
+
+/**
+ * Test function.
+ * 
+ * This is a test function (long description).
+ * 
+ * @param {int} input An input value.
+ * 
+ * @returns {int} The input value but negative.
+ * 
+ * @example
+ *      negate(2);
+ * 
+ * @since 1.0.0
+ */
+website.imt.negate = function(input) {
+    
+    // can you see me?
+    return -input;
+};
+
+/** 
+ * Calculator class definition.
+ * 
+ * @since 1.0.0
+ */
+website.imt.Calculator = class {
+
+    /**
+     * Creates a new Calculator object.
+     * 
+     * @constructs website.imt.Calculator
+     * 
+     * @param {number} num1 A number
+     * @param {number} num2 Another number
+     * 
+     * @since 1.0.0
+     */
+    constructor(num1, num2) {
+
+        // store values
+        this._num1 = num1;
+        this._num2 = num2;
+    }
+
+    /**
+     * @memberof website.imt.Calculator
+     * 
+     * @property {number} num1 A number.
+     * 
+     * @since 1.0.0
+     */
+     get num1()      { return this._num1; }
+     set num1(value) { this._num1 = value; }
+ 
+     /**
+      * @memberof website.imt.Calculator
+      * 
+      * @property {number} num2 Another number.
+      * 
+      * @since 1.0.0
+      */
+     get num2()      { return this._num2; }
+     set num2(value) { this._num2 = value; }
+ 
+     /** 
+     * Return the version number.
+     * 
+     * @memberof website.imt.Calculator
+     * 
+     * @returns {string} The version number.
+     * 
+     * @since 1.0.0
+     */
+        static version() {
+        return '1.0.0';
+    }
+
+     /** 
+     * Perform addition.
+     * 
+     * @memberof website.imt.Calculator
+     * 
+     * @returns {number} num1 + num2
+     * 
+     * @since 1.0.0
+     */
+      add() {
+        return(this._num1 + this._num2);
+    }
+
+     /** 
+     * Perform subtraction.
+     * 
+     * @memberof website.imt.Calculator
+     * @static
+     * 
+     * @returns {number} num1 - num2
+     * 
+     * @since 1.0.0
+     */
+      subtract() {
+        return(this._num1 - this._num2);
+    }
+
+     /** 
+     * Perform multiplication.
+     * 
+     * @memberof website.imt.Calculator
+     * 
+     * @returns {number} num1 * num2
+     * 
+     * @since 1.0.0
+     */
+      multiply() {
+        return(this._num1 * this._num2);
+    }
+
+     /** 
+     * Perform division.
+     * 
+     * @memberof website.imt.Calculator
+     * 
+     * @returns {number} num1 / num2
+     * 
+     * @throws {Error} An divide-by-zero error is thrown if num2 = 0.
+     * 
+     * @since 1.0.0
+     */
+      divide() {
+
+        if (this._num2 == 0)
+            throw new Error('website.imt.divide(): Division by zero');
+        else
+            return(this._num1 / this._num2);
+    }
+}
+
+calc = new website.imt.Calculator(1, 2);
+document.write(`${calc.add()}&lt;br>`);
+document.write(`${calc.subtract()}&lt;br>`);
+document.write(`${calc.multiply()}&lt;br>`);
+document.write(`${calc.divide()}&lt;br>`);
+calc.num1 = 3;
+calc.num2 = 0;
+document.write(`${calc.add()}&lt;br>`);
+document.write(`${calc.subtract()}&lt;br>`);
+document.write(`${calc.multiply()}&lt;br>`);
+document.write(`${calc.divide()}&lt;br>`);</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Tue Apr 20 2021 07:01:51 GMT-0400 (Bolivia Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+
+
+</body>
+</html>

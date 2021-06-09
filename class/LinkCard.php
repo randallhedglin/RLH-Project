@@ -1,16 +1,16 @@
 <?php
 /**
- * This is the short file description.
+ * Class for displaying individual Link Cards.
  * 
- * This is the long file description.
+ * This class encapsulates a single Link Card, which includes an icon, a title,
+ * and a URL.  This class is intended for use with
+ * {@see \RLHProject\LinkStack}.
  * 
  * @author    Randall Hedglin <randallhedglin@yahoo.com>
  * @copyright Copyright (c) 2021 Randall Hedglin
  * @license   Private
  * @package   RLHProject
  * @version   1.0.0 Original release.
- * 
- * @todo Create the LinkStack and LinkContainer classes.
  */
 
 namespace RLHProject;
@@ -19,42 +19,73 @@ namespace RLHProject;
 if (!class_exists('LinkCard')) {
 
     /**
-     * Container class for displaying Link Cards.
+     * Class for displaying individual Link Cards.
      * 
-     * This class creates and displays links as Link Cards using the desired
-     * styles and settings as provided.
+     * This class encapsulates a single Link Card, which includes an icon, a title,
+     * and a URL.  This class is intended for use with
+     * {@see \RLHProject\LinkStack}.
      * 
      * @since 1.0.0
      */
     class LinkCard {
 
+        /** @var string $m_icon FontAwesome icon to be displayed on the Link Card. */
+        private $m_icon = '';
+
         /** @var string $m_display_text Text to be displayed on the Link Card. */
         private $m_display_text = '';
 
-        /** @var string $url URL associated with the Link Card. */
+        /** @var string $m_url URL associated with the Link Card. */
         private $m_url = '';
 
         /**
          * LinkCard class constructor.
          * 
-         * Creates a new Link Card object with the specified display text and
-         * URL.
+         * Creates a new Link Card object with the specified icon, display text
+         * and URL.
          * 
+         * @param string $icon         Icon to be displayed on the Link Card.
          * @param string $display_text Text to be displayed on the Link Card.
          * @param string $url          URL associated with the Link Card.
          * 
          * @return void
          * 
-         * @throws \Exception If either object passed is not a valid non-zero-
+         * @throws \Exception If any object passed is not a valid non-zero-
          * length string, an Exception will be thrown.
          * 
          * @since 1.0.0
          */
-        public function __construct($display_text, $url) {
+        public function __construct($icon, $display_text, $url) {
 
             // store the data
+            $this->set_icon($icon);
             $this->set_display_text($display_text);
             $this->set_url($url);
+        }
+
+        /**
+         * Set the icon.
+         * 
+         * Specify the icon to be displayed on the Link Card, in the form of
+         * a FontAwesome icon class (i.e., "fab fa-wordpress").
+         * 
+         * @param string $icon Icon to be displayed on the Link Card, in the
+         * form of a FontAwesome icon class (i.e., "fab fa-wordpress").
+         * 
+         * @return void
+         * 
+         * @throws \Exception If the object passed is not a valid non-zero-
+         * length string, an Exception will be thrown.
+         * 
+         * @since 1.0.0
+         */
+        public function set_icon($icon) {
+
+            // make sure it's a valid string
+            if (is_string($icon) && strlen($icon))
+                $this->m_icon = $icon;
+            else
+                throw new \Exception(__METHOD__ . ': Object passed must be a non-zero-length string.');
         }
 
         /**
@@ -101,6 +132,19 @@ if (!class_exists('LinkCard')) {
                 $this->m_url = $url;
             else
                 throw new \Exception(__METHOD__ . ': Object passed must be a non-zero-length string.');
+        }
+
+        /**
+         * Get the icon.
+         * 
+         * Retrieve the icon associated with this LinkCard object.
+         * 
+         * @return string The icon associated with this object.
+         * 
+         * @since 1.0.0
+         */
+        public function get_icon() {
+            return $this->m_icon;
         }
 
         /**
@@ -158,19 +202,6 @@ if (!class_exists('LinkCard')) {
          */
         private function get_url_for_comparison() {
             return preg_replace('/[^a-z0-9]/i', '', strtolower($this->m_url));
-        }
-
-        /**
-         * Output the link.
-         * 
-         * Render the HTML code to display this Link Card object.
-         * 
-         * @return void
-         * 
-         * @since 1.0.0
-         */
-        public function output() {
-            echo "<div><a href='$this->m_url' target='_blank' rel='noopener noreferrer'>$this->m_display_text</a></div>";
         }
 
         /**
@@ -240,6 +271,49 @@ if (!class_exists('LinkCard')) {
         public static function descending_sort_by_url($a, $b) {
             return -strcmp($a->get_url_for_comparison(), $b->get_url_for_comparison());
         }
+        
+        /**
+         * Output the link card.
+         * 
+         * Render the HTML code to display this Link Card object.
+         * 
+         * @return void
+         * 
+         * @since 1.0.0
+         */
+        public function output_html() {
+
+            // output the link card
+            _div("class=rlh-link-card onclick=window.open('$this->m_url', '_blank')",
+                _i("class=$this->m_icon style=padding-right:.5em"),
+                $this->m_display_text,
+            )->output_html();
+        }
+
+        /**
+         * Get the Link Card CSS.
+         * 
+         * Get the CSS for properly displaying Link Cards.
+         * 
+         * @param string $width  Width of the Link Cards.
+         * @param string $height Height of the Link Cards.
+         * @param string $border Border thickness for the Link Stack.
+         * 
+         * @return void
+         * 
+         * @since 1.0.0
+         */
+        public static function get_css($width, $height, $border) { return "
+
+.rlh-link-card {
+    border:      4px solid green;
+    cursor:      pointer;
+    width:       $width;
+    height:      $height;
+    transform:   translate($border);
+}
+
+        "; }
     }
 }
 
