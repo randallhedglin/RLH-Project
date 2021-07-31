@@ -284,9 +284,13 @@ if (!class_exists('LinkCard')) {
         public function output_html() {
 
             // output the link card
-            _div("class=rlh-link-card onclick=window.open('$this->m_url', '_blank')",
-                _i("class=$this->m_icon style=padding-right:.5em"),
-                $this->m_display_text,
+            _div("class=rlh-link-card-outer onclick=window.open('$this->m_url', '_blank')",
+                _div("class=rlh-link-card-icon",
+                   _i("class=$this->m_icon style=padding-right:.5em"),
+                ),
+                _div("class=rlh-link-card-text",
+                    $this->m_display_text,
+                )
             )->output_html();
         }
 
@@ -305,12 +309,35 @@ if (!class_exists('LinkCard')) {
          */
         public static function get_css($width, $height, $border) { return "
 
-.rlh-link-card {
-    border:      4px solid green;
-    cursor:      pointer;
-    width:       $width;
-    height:      $height;
-    transform:   translate($border);
+.rlh-link-card-outer {
+    background:    #ddd;
+    cursor:        pointer;
+    width:         $width;
+    height:        $height;
+    transform:     translate($border);
+    margin-bottom: $border;
+    border-radius: calc($border / 4);
+    display:       flex;
+    align-items:   center;
+}
+
+.rlh-link-card-icon {
+    display:     inline-block;
+    width:       $height;
+    font-size:   150%;
+    font-weight: 700;
+    text-align:  right;
+    margin-left: .8em;
+}
+
+.rlh-link-card-text {
+    font-size:   125%;
+    font-weight: 400;
+    margin-left: .16em;
+}
+
+.rlh-link-card-outer:hover {
+    background: #ccc;
 }
 
         "; }

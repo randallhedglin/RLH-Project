@@ -258,18 +258,28 @@ if (!class_exists('LinkStack')) {
         public static function get_css($width, $height, $border) { return "
 
 .rlh-link-stack-outer {
-    border: 4px solid red;
-    flex:   1 1 calc($width + $border + $border);
+    flex:       1 1 calc($width + $border + $border);
+    position:   relative;
+    min-height: 45em;
 }
 
 .rlh-link-stack {
-    background: orange;
-    width:      calc($width + $border + $border);
-    padding:    $border 0;
+    background:    #f4faff;
+    width:         calc($width + $border + $border);
+    padding:       $border 0 0 0;
+    position:      absolute;
+    left:          50%;
+    top:           50%;
+    transform:     translate(-50%, -50%);
+    border-radius: calc($border / 2);
 }
 
 .rlh-link-stack-header {
-    height: $height;
+    text-align:     center;
+    font-weight:    1000;
+    font-size:      175%;
+    padding-bottom: $border;
+    transform:      translate(-.25em, 0);
 }
             
         "; }

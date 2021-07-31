@@ -111,14 +111,14 @@ if (!class_exists('LinkContainer')) {
         public static function get_css() { return '
 
 .rlh-link-container-outer {
-    display:    flex;
-    flex-flow:  col nowrap;
-    min-height: 100%;
-    background: yellow;
+    display:      flex;
+    flex-flow:    col nowrap;
+    min-height:   100%;
+    margin-left:  3%;
+    margin-right: 3%;
 }
 
 .rlh-link-container {
-    border:    4px solid blue;
     display:   flex;
     flex-flow: row wrap;
     flex:      1;
