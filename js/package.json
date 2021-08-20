@@ -1,20 +1,20 @@
 {
-    "name" : "RLHProject",
+    "name" : "RLH Project",
     "version" : "1.0.0",
     "description" : "A project by RLH.",
-    "homepage" : "https://example.com",
+    "homepage" : "https://www.linkedin.com/in/randall-hedglin-554484186/",
     "bugs" : {
-        "url" : "https://example.com",
+        "url" : "https://www.linkedin.com/in/randall-hedglin-554484186/",
         "email": "randallhedglin@yahoo.com"
     },
     "license" : "private",
     "author" : {
         "name" : "Randall Hedglin",
         "email" : "randallhedglin@yahoo.com",
-        "url" : "https://example.com"
+        "url" : "https://www.linkedin.com/in/randall-hedglin-554484186/"
     },
     "repository" : {
         "type" : "git",
-        "url" : "https://example.com"
+        "url" : "https://github.com/randallhedglin/RLH-Project"
     }
 }
