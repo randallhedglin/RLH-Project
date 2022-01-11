@@ -11,15 +11,125 @@ Search.appendIndex(
             "summary": "_HTMLElement\u0020class\u0020constructor.",
             "url": "classes/HTMLElements-HTMLElement.html#method___construct"
         },                {
+            "fqsen": "\\HTMLElements\\_HTMLElement\u003A\u003Aseparate_reserved_attributes\u0028\u0029",
+            "name": "separate_reserved_attributes",
+            "summary": "Separate\u0020\u0022special\/reserved\u0022\u0020attributes\u0020from\u0020other\u0020HTML\u0020attributes.",
+            "url": "classes/HTMLElements-HTMLElement.html#method_separate_reserved_attributes"
+        },                {
+            "fqsen": "\\HTMLElements\\_HTMLElement\u003A\u003Avalidate_reserved_attributes\u0028\u0029",
+            "name": "validate_reserved_attributes",
+            "summary": "Validate\u0020\u0022special\/reserved\u0022\u0020attributes.",
+            "url": "classes/HTMLElements-HTMLElement.html#method_validate_reserved_attributes"
+        },                {
+            "fqsen": "\\HTMLElements\\_HTMLElement\u003A\u003Aprepend_class\u0028\u0029",
+            "name": "prepend_class",
+            "summary": "Prepend\u0020a\u0020class\u0020name\u0020to\u0020any\u0020existing\u0020class\u0020names.",
+            "url": "classes/HTMLElements-HTMLElement.html#method_prepend_class"
+        },                {
+            "fqsen": "\\HTMLElements\\_HTMLElement\u003A\u003Aappend_class\u0028\u0029",
+            "name": "append_class",
+            "summary": "Append\u0020a\u0020class\u0020name\u0020to\u0020any\u0020existing\u0020class\u0020names.",
+            "url": "classes/HTMLElements-HTMLElement.html#method_append_class"
+        },                {
+            "fqsen": "\\HTMLElements\\_HTMLElement\u003A\u003Aprepend_style\u0028\u0029",
+            "name": "prepend_style",
+            "summary": "Prepend\u0020a\u0020stylesheet\u0020property\u0020to\u0020any\u0020existing\u0020stylesheet\u0020properties.",
+            "url": "classes/HTMLElements-HTMLElement.html#method_prepend_style"
+        },                {
+            "fqsen": "\\HTMLElements\\_HTMLElement\u003A\u003Aappend_style\u0028\u0029",
+            "name": "append_style",
+            "summary": "Append\u0020a\u0020stylesheet\u0020property\u0020to\u0020any\u0020existing\u0020stylesheet\u0020properties.",
+            "url": "classes/HTMLElements-HTMLElement.html#method_append_style"
+        },                {
+            "fqsen": "\\HTMLElements\\_HTMLElement\u003A\u003Aprepend_attribute\u0028\u0029",
+            "name": "prepend_attribute",
+            "summary": "Prepend\u0020a\u0020value\u0020to\u0020any\u0020existing\u0020attribute.",
+            "url": "classes/HTMLElements-HTMLElement.html#method_prepend_attribute"
+        },                {
+            "fqsen": "\\HTMLElements\\_HTMLElement\u003A\u003Aappend_attribute\u0028\u0029",
+            "name": "append_attribute",
+            "summary": "Append\u0020a\u0020value\u0020to\u0020any\u0020existing\u0020attribute.",
+            "url": "classes/HTMLElements-HTMLElement.html#method_append_attribute"
+        },                {
+            "fqsen": "\\HTMLElements\\_HTMLElement\u003A\u003Adeconstruct_style_string\u0028\u0029",
+            "name": "deconstruct_style_string",
+            "summary": "Convert\u0020a\u0020string\u0020containing\u0020CSS\u0020properties\u0020and\u0020values\u0020into\u0020an\u0020associative\u0020array.",
+            "url": "classes/HTMLElements-HTMLElement.html#method_deconstruct_style_string"
+        },                {
+            "fqsen": "\\HTMLElements\\_HTMLElement\u003A\u003Areconstruct_style_string\u0028\u0029",
+            "name": "reconstruct_style_string",
+            "summary": "Convert\u0020an\u0020associative\u0020array\u0020containing\u0020CSS\u0020properties\u0020into\u0020a\u0020properly\u0020formatted\u0020string.",
+            "url": "classes/HTMLElements-HTMLElement.html#method_reconstruct_style_string"
+        },                {
+            "fqsen": "\\HTMLElements\\_HTMLElement\u003A\u003Aprepare_html_attributes_string\u0028\u0029",
+            "name": "prepare_html_attributes_string",
+            "summary": "Prepare\u0020a\u0020string\u0020containing\u0020the\u0020HTML\u0020attributes\u0020for\u0020this\u0020_HTMLElement.",
+            "url": "classes/HTMLElements-HTMLElement.html#method_prepare_html_attributes_string"
+        },                {
+            "fqsen": "\\HTMLElements\\_HTMLElement\u003A\u003Acombine_attributes_and_reserved_attributes\u0028\u0029",
+            "name": "combine_attributes_and_reserved_attributes",
+            "summary": "Combine\u0020attributes\u0020with\u0020reserved\u0020attributes\u0020for\u0020output.",
+            "url": "classes/HTMLElements-HTMLElement.html#method_combine_attributes_and_reserved_attributes"
+        },                {
+            "fqsen": "\\HTMLElements\\_HTMLElement\u003A\u003Ainsert_reserved_classes\u0028\u0029",
+            "name": "insert_reserved_classes",
+            "summary": "Insert\u0020classes\u0020from\u0020\u0024m_reserved_attributes\u0020into\u0020the\u0020passed\u0020string.",
+            "url": "classes/HTMLElements-HTMLElement.html#method_insert_reserved_classes"
+        },                {
+            "fqsen": "\\HTMLElements\\_HTMLElement\u003A\u003Ainsert_reserved_styles\u0028\u0029",
+            "name": "insert_reserved_styles",
+            "summary": "Insert\u0020styles\u0020from\u0020\u0024m_reserved_attributes\u0020into\u0020the\u0020passed\u0020string.",
+            "url": "classes/HTMLElements-HTMLElement.html#method_insert_reserved_styles"
+        },                {
             "fqsen": "\\HTMLElements\\_HTMLElement\u003A\u003Aoutput_html\u0028\u0029",
             "name": "output_html",
             "summary": "Output\u0020the\u0020HTML\u0020associated\u0020with\u0020this\u0020_HTMLElement.",
             "url": "classes/HTMLElements-HTMLElement.html#method_output_html"
         },                {
+            "fqsen": "\\HTMLElements\\_HTMLElement\u003A\u003Aoutput_html_inner_content\u0028\u0029",
+            "name": "output_html_inner_content",
+            "summary": "Output\u0020the\u0020inner\u0020HTML\u0020content\u0020associated\u0020with\u0020this\u0020_HTMLElement.",
+            "url": "classes/HTMLElements-HTMLElement.html#method_output_html_inner_content"
+        },                {
+            "fqsen": "\\HTMLElements\\_HTMLElement\u003A\u003Aset_pre_output_text\u0028\u0029",
+            "name": "set_pre_output_text",
+            "summary": "Set\u0020a\u0020pre\u002Doutput\u0020string\u0020for\u0020this\u0020_HTMLElement.",
+            "url": "classes/HTMLElements-HTMLElement.html#method_set_pre_output_text"
+        },                {
             "fqsen": "\\HTMLElements\\_HTMLElement\u003A\u003Aprepare_attributes_for_helper_function\u0028\u0029",
             "name": "prepare_attributes_for_helper_function",
             "summary": "Prepare\u0020attributes\u0020array\u0020for\u0020helper\u0020functions.",
             "url": "classes/HTMLElements-HTMLElement.html#method_prepare_attributes_for_helper_function"
+        },                {
+            "fqsen": "\\HTMLElements\\_HTMLElement\u003A\u003Aget_string_components_from_attributes\u0028\u0029",
+            "name": "get_string_components_from_attributes",
+            "summary": "Prepare\u0020components\u0020array\u0020from\u0020attributes\u0020string.",
+            "url": "classes/HTMLElements-HTMLElement.html#method_get_string_components_from_attributes"
+        },                {
+            "fqsen": "\\HTMLElements\\_HTMLElement\u003A\u003Aextract_key_value_pairs_from_components\u0028\u0029",
+            "name": "extract_key_value_pairs_from_components",
+            "summary": "Extract\u0020key\/value\u0020pairs\u0020from\u0020components\u0020array.",
+            "url": "classes/HTMLElements-HTMLElement.html#method_extract_key_value_pairs_from_components"
+        },                {
+            "fqsen": "\\HTMLElements\\_HTMLElement\u003A\u003A\u0024m_tag",
+            "name": "m_tag",
+            "summary": "",
+            "url": "classes/HTMLElements-HTMLElement.html#property_m_tag"
+        },                {
+            "fqsen": "\\HTMLElements\\_HTMLElement\u003A\u003A\u0024m_attributes",
+            "name": "m_attributes",
+            "summary": "",
+            "url": "classes/HTMLElements-HTMLElement.html#property_m_attributes"
+        },                {
+            "fqsen": "\\HTMLElements\\_HTMLElement\u003A\u003A\u0024m_reserved_attributes",
+            "name": "m_reserved_attributes",
+            "summary": "",
+            "url": "classes/HTMLElements-HTMLElement.html#property_m_reserved_attributes"
+        },                {
+            "fqsen": "\\HTMLElements\\_HTMLElement\u003A\u003A\u0024m_pre_output",
+            "name": "m_pre_output",
+            "summary": "",
+            "url": "classes/HTMLElements-HTMLElement.html#property_m_pre_output"
         },                {
             "fqsen": "\\HTMLElements\\Anchor",
             "name": "Anchor",
@@ -781,10 +891,20 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020display\u0020text.",
             "url": "classes/RLHProject-LinkCard.html#method_get_display_text"
         },                {
+            "fqsen": "\\RLHProject\\LinkCard\u003A\u003Aget_display_text_for_comparison\u0028\u0029",
+            "name": "get_display_text_for_comparison",
+            "summary": "Get\u0020the\u0020display\u0020text,\u0020converted\u0020for\u0020comparison\u0020purposes.",
+            "url": "classes/RLHProject-LinkCard.html#method_get_display_text_for_comparison"
+        },                {
             "fqsen": "\\RLHProject\\LinkCard\u003A\u003Aget_url\u0028\u0029",
             "name": "get_url",
             "summary": "Get\u0020the\u0020URL.",
             "url": "classes/RLHProject-LinkCard.html#method_get_url"
+        },                {
+            "fqsen": "\\RLHProject\\LinkCard\u003A\u003Aget_url_for_comparison\u0028\u0029",
+            "name": "get_url_for_comparison",
+            "summary": "Get\u0020the\u0020URL\u0020text,\u0020converted\u0020for\u0020comparison\u0020purposes.",
+            "url": "classes/RLHProject-LinkCard.html#method_get_url_for_comparison"
         },                {
             "fqsen": "\\RLHProject\\LinkCard\u003A\u003Aascending_sort_by_display_text\u0028\u0029",
             "name": "ascending_sort_by_display_text",
@@ -816,6 +936,21 @@ Search.appendIndex(
             "summary": "Get\u0020the\u0020Link\u0020Card\u0020CSS.",
             "url": "classes/RLHProject-LinkCard.html#method_get_css"
         },                {
+            "fqsen": "\\RLHProject\\LinkCard\u003A\u003A\u0024m_icon",
+            "name": "m_icon",
+            "summary": "",
+            "url": "classes/RLHProject-LinkCard.html#property_m_icon"
+        },                {
+            "fqsen": "\\RLHProject\\LinkCard\u003A\u003A\u0024m_display_text",
+            "name": "m_display_text",
+            "summary": "",
+            "url": "classes/RLHProject-LinkCard.html#property_m_display_text"
+        },                {
+            "fqsen": "\\RLHProject\\LinkCard\u003A\u003A\u0024m_url",
+            "name": "m_url",
+            "summary": "",
+            "url": "classes/RLHProject-LinkCard.html#property_m_url"
+        },                {
             "fqsen": "\\RLHProject\\LinkContainer",
             "name": "LinkContainer",
             "summary": "Class\u0020for\u0020displaying\u0020groups\u0020of\u0020stacked\u0020link\u0020cards.",
@@ -845,6 +980,11 @@ Search.appendIndex(
             "name": "get_css",
             "summary": "Get\u0020the\u0020Link\u0020Container\u0020CSS.",
             "url": "classes/RLHProject-LinkContainer.html#method_get_css"
+        },                {
+            "fqsen": "\\RLHProject\\LinkContainer\u003A\u003A\u0024m_content",
+            "name": "m_content",
+            "summary": "",
+            "url": "classes/RLHProject-LinkContainer.html#property_m_content"
         },                {
             "fqsen": "\\RLHProject\\LinkStack",
             "name": "LinkStack",
@@ -905,6 +1045,96 @@ Search.appendIndex(
             "name": "get_css",
             "summary": "Get\u0020the\u0020Link\u0020Stack\u0020CSS.",
             "url": "classes/RLHProject-LinkStack.html#method_get_css"
+        },                {
+            "fqsen": "\\RLHProject\\LinkStack\u003A\u003A\u0024m_icon",
+            "name": "m_icon",
+            "summary": "",
+            "url": "classes/RLHProject-LinkStack.html#property_m_icon"
+        },                {
+            "fqsen": "\\RLHProject\\LinkStack\u003A\u003A\u0024m_display_text",
+            "name": "m_display_text",
+            "summary": "",
+            "url": "classes/RLHProject-LinkStack.html#property_m_display_text"
+        },                {
+            "fqsen": "\\RLHProject\\LinkStack\u003A\u003A\u0024m_sort_function",
+            "name": "m_sort_function",
+            "summary": "",
+            "url": "classes/RLHProject-LinkStack.html#property_m_sort_function"
+        },                {
+            "fqsen": "\\RLHProject\\LinkStack\u003A\u003A\u0024m_content",
+            "name": "m_content",
+            "summary": "",
+            "url": "classes/RLHProject-LinkStack.html#property_m_content"
+        },                {
+            "fqsen": "\\MAX_CONTENT_WIDTH\u0028\u0029",
+            "name": "MAX_CONTENT_WIDTH",
+            "summary": "",
+            "url": "namespaces/default.html#function_MAX_CONTENT_WIDTH"
+        },                {
+            "fqsen": "\\LITE_MENU_WIDTH\u0028\u0029",
+            "name": "LITE_MENU_WIDTH",
+            "summary": "",
+            "url": "namespaces/default.html#function_LITE_MENU_WIDTH"
+        },                {
+            "fqsen": "\\HIDE_MENU_WIDTH\u0028\u0029",
+            "name": "HIDE_MENU_WIDTH",
+            "summary": "",
+            "url": "namespaces/default.html#function_HIDE_MENU_WIDTH"
+        },                {
+            "fqsen": "\\LINK_CARD_WIDTH\u0028\u0029",
+            "name": "LINK_CARD_WIDTH",
+            "summary": "",
+            "url": "namespaces/default.html#function_LINK_CARD_WIDTH"
+        },                {
+            "fqsen": "\\LINK_CARD_HEIGHT\u0028\u0029",
+            "name": "LINK_CARD_HEIGHT",
+            "summary": "",
+            "url": "namespaces/default.html#function_LINK_CARD_HEIGHT"
+        },                {
+            "fqsen": "\\LINK_STACK_BORDER\u0028\u0029",
+            "name": "LINK_STACK_BORDER",
+            "summary": "",
+            "url": "namespaces/default.html#function_LINK_STACK_BORDER"
+        },                {
+            "fqsen": "\\get_primary_css\u0028\u0029",
+            "name": "get_primary_css",
+            "summary": "",
+            "url": "namespaces/default.html#function_get_primary_css"
+        },                {
+            "fqsen": "\\get_header_css\u0028\u0029",
+            "name": "get_header_css",
+            "summary": "",
+            "url": "namespaces/default.html#function_get_header_css"
+        },                {
+            "fqsen": "\\get_header_content\u0028\u0029",
+            "name": "get_header_content",
+            "summary": "",
+            "url": "namespaces/default.html#function_get_header_content"
+        },                {
+            "fqsen": "\\get_body_css\u0028\u0029",
+            "name": "get_body_css",
+            "summary": "",
+            "url": "namespaces/default.html#function_get_body_css"
+        },                {
+            "fqsen": "\\get_body_content\u0028\u0029",
+            "name": "get_body_content",
+            "summary": "",
+            "url": "namespaces/default.html#function_get_body_content"
+        },                {
+            "fqsen": "\\get_footer_css\u0028\u0029",
+            "name": "get_footer_css",
+            "summary": "",
+            "url": "namespaces/default.html#function_get_footer_css"
+        },                {
+            "fqsen": "\\get_footer_content\u0028\u0029",
+            "name": "get_footer_content",
+            "summary": "",
+            "url": "namespaces/default.html#function_get_footer_content"
+        },                {
+            "fqsen": "\\get_link_container\u0028\u0029",
+            "name": "get_link_container",
+            "summary": "",
+            "url": "namespaces/default.html#function_get_link_container"
         },                {
             "fqsen": "\\",
             "name": "\\",
